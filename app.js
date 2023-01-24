@@ -5,16 +5,17 @@ let target = Math.floor(Math.random()*(max - min + 1) + min);
 
 input = Number(window.prompt("Guess a number between 1 and 10", ""));
 
-if(input !== target){
-}else if(input < target){
+while(input !== target){
+    }if(input < target){
     window.alert("Higher");
     window.prompt("Guess again");
-}else if (input > target){
+    }else if (input > target){
     window.alert("Lower");
     window.prompt("Guess again");
-}else if (input === target){
-    window.alert("Correct!");
-}
+    }
+if (input === target){
+        window.alert("Correct!");
+    }
 }
 
 
