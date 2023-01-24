@@ -1,7 +1,7 @@
 function guessOnce(input){
-let minNum = Math.ceil(1);
-let maxNum = Math.floor(10);
-let target = Math.floor(Math.random*(maxNum - minNum)+minNum); 
+let min = Math.ceil(1);
+let max = Math.floor(10);
+let target = Math.floor(Math.random()*(max - min + 1) + min); 
 
 input = Number(window.prompt("Guess a number between 1 and 10", ""));
 
